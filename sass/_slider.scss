@@ -1,0 +1,32 @@
+@import "variables.scss";
+
+.slider {
+  box-shadow: 10px 10px 10px 5px rgba(161, 153, 161, 1);
+  max-width: $image-width;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.slider__container-images {
+  position: relative;
+  padding-bottom: $image-height-proportion;
+}
+
+.slider__container-image {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+
+  img {
+    position: absolute;
+    width: $image-width;
+    height: 100%;
+    user-select: none;
+  }
+
+  &.container__imageOne {
+    width: 100%;
+  }
+  &.container__imageSecond {
+    width: 50%;
+  }
+}

@@ -1,0 +1,22 @@
+.slider__divider {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.897);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .slider__handle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.877);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 0 0 auto;
+    font-size: 20px;
+  }
+}

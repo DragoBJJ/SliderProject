@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <title>Projekt Slider</title>
+</head>
+
+<body>
+
+  <div class="slider">
+
+    <div class="slider__container-images">
+
+      <div class="slider__container-image container__imageOne">
+        <img class="imageOne" src="/assets/image3.jpg" alt="">
+      </div>
+
+      <div class="slider__container-image container__imageSecond">
+        <img class="imageSecond" src="/assets/image1.jpg" alt="">
+      </div>
+      <div class="slider__divider">
+        <div class="slider__handle">
+          <span class="fa fa-chevron-left"></span>
+          <span class="fa fa-chevron-right"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
+<!-- // document.addEventListener("DOMContentLoaded", function() {
+  //   class Slider {
+  //     constructor() {
+  //       this.imagesContainer = document.querySelector(
+  //         ".slider__container-images"
+  //       );
+  //       this.img1Container = document.querySelector(".container__imageOne");
+  //       this.img2Container = document.querySelector(".container__imageSecond");
+  //       this.sliderWidth;
+  //       this.containerLeftOffset = this.imagesContainer.offsetLeft;
+  //       this.sliderDivider = document.querySelector(".slider__divider");
+  //       this.handleElement = document.querySelector(".slider__handle");
+  //       this.imgOne = document.querySelector(".imageOne");
+  //       this.imgSecond = document.querySelector(".imageSecond");
+  //       this.dragging = false;
+  //       this.renderSize();
+  //       this.init();
+  //       window.addEventListener("resize", this.renderSize);
+  //     }
+  //     renderSize = () => {
+  //       this.sliderWidth = this.imagesContainer.offsetWidth;
+  //       this.img1Container.width = `${this.sliderWidth}px`;
+  //       this.img2Container.width = `${this.sliderWidth}px`;
+  //       this.imgOne.style.width = `${this.sliderWidth}px`;
+  //       this.imgSecond.style.width = `${this.sliderWidth}px`;
+  //     };
+  
+  //     init = () => {
+  //       this.handleElement.addEventListener("mousedown", () => {
+  //         this.dragging = true;
+  //       });
+  //       this.handleElement.addEventListener("mouseup", () => {
+  //         this.dragging = false;
+  //       });
+  //       window.addEventListener("mousemove", event => {
+  //         if (this.dragging) {
+  //           this.move(event.clientX);
+  //         }
+  //       });
+  //     };
+  
+  //     move = clientX => {
+  //       const finishOffSet = this.finishOffset(clientX);
+  //       const percent = (finishOffSet / this.sliderWidth) * 100 + "%";
+  //       this.sliderDivider.style.left = percent;
+  //       this.img2Container.style.width = percent;
+  //     };
+  
+  //     finishOffset = clientX => {
+  //       const offset = clientX - this.containerLeftOffset;
+  
+  //       if (offset < 0) {
+  //         return 0;
+  //       } else if (offset > this.sliderWidth) {
+  //         return this.sliderWidth;
+  //       } else {
+  //         return offset;
+  //       }
+  //     };
+  //   }
+  
+  //   new Slider();
+  // });
+   -->
